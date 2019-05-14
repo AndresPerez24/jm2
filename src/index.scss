@@ -1,0 +1,51 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.slick-dots {
+  bottom: 60px;
+}
+
+.slick-dots li button::before {
+  font-size: 16px;
+  color: transparent;
+  border: 3px solid #d8d8d8;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.slick-dots li.slick-active button::before {
+  border-color: white;
+  color: transparent;
+  opacity: 1;
+}
+
+input,
+textarea
+ {
+  &:focus {
+    outline: none;
+  }
+}
+
+
+input::placeholder {
+  color: white;
+}
+
+textarea::placeholder {
+  color: white;
+}
