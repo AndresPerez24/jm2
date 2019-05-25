@@ -1,59 +1,71 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import feature from "../../Images/feature.png";
+import feature1 from "../../Images/feature1.png";
+import feature2 from "../../Images/feature2.png";
+import feature3 from "../../Images/feature3.png";
+import feature4 from "../../Images/feature4.png";
+import {
+  MainContainer,
+  Container,
+  MainTitle,
+  TitleDescription,
+  FeatureContainer,
+  Feature,
+  Image,
+  Title,
+  Description
+} from "./FeaturesStyles";
 
 class Features extends Component {
   render() {
     return (
       <MainContainer>
         <Container>
-          <MainTitle>Lo que nos Diferencia</MainTitle>
+          <MainTitle>
+            Lo que nos <strong>Diferencia</strong>
+          </MainTitle>
           <TitleDescription>
-            Además de brindarle los mejores servicios y productos del mercado,
-            cuidamos cada detalle de su proceso de compra. Por eso también
-            asesoramos y hacemos seguimiento personal a sus pedidos y
-            necesidades.
+            Además de brindarle los mejores servicios y productos del mercado, cuidamos cada detalle de su proceso de compra. Por eso
+            también asesoramos y hacemos seguimiento personal a sus pedidos y necesidades.
           </TitleDescription>
           <FeatureContainer>
             <Feature>
-              <Image src={feature} />
-              <InnerContainer>
+              <Image src={feature1} />
+              <div>
                 <Title>Tiempos de entrega</Title>
                 <Description>
-                  Nuestros tiempos de entrega son inigualables. Hacemos el envío
-                  personalmente asegurando que lleguen en el momento indicado.
+                  Nuestros tiempos de entrega son inigualables. Hacemos el envío personalmente asegurando que lleguen en el momento
+                  indicado.
                 </Description>
-              </InnerContainer>
+              </div>
             </Feature>
             <Feature>
-              <Image src={feature} />
-              <InnerContainer>
-                <Title>Tiempos de entrega</Title>
+              <Image src={feature2} />
+              <div>
+                <Title>Productos únicos en el mercado</Title>
                 <Description>
-                  Nuestros tiempos de entrega son inigualables. Hacemos el envío
-                  personalmente asegurando que lleguen en el momento indicado.
+                  Nuestros productos de todas las gamas cubren el espectro de sus necesidades y garantizan la solución de sus necesidades
+                  particulares.
                 </Description>
-              </InnerContainer>
+              </div>
             </Feature>
             <Feature>
-              <Image src={feature} />
-              <InnerContainer>
-                <Title>Tiempos de entrega</Title>
+              <Image src={feature3} />
+              <div>
+                <Title>Soporte y mantenimiento</Title>
                 <Description>
-                  Nuestros tiempos de entrega son inigualables. Hacemos el envío
-                  personalmente asegurando que lleguen en el momento indicado.
+                  Atendemos necesidades posteriores que se le presenten a nuestros clientes. Asesoramos y garantizamos la experiencia
+                  completa.
                 </Description>
-              </InnerContainer>
+              </div>
             </Feature>
             <Feature>
-              <Image src={feature} />
-              <InnerContainer>
-                <Title>Tiempos de entrega</Title>
+              <Image src={feature4} />
+              <div>
+                <Title>Servicio y atención</Title>
                 <Description>
-                  Nuestros tiempos de entrega son inigualables. Hacemos el envío
-                  personalmente asegurando que lleguen en el momento indicado.
+                  Tratamos a cada uno de nuestros clientes de manera personalizada, por eso estamos pendientes de cada detalle del proceso.
                 </Description>
-              </InnerContainer>
+              </div>
             </Feature>
           </FeatureContainer>
         </Container>
@@ -61,76 +73,5 @@ class Features extends Component {
     );
   }
 }
-
-const MainContainer = styled.div``;
-
-const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 20px 120px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-`;
-
-const MainTitle = styled.h1`
-  font-size: 2.3125rem;
-  color: #ffffff;
-  &:after {
-    content: "";
-    height: 15px;
-    border-bottom: 8px solid white;
-    top: 0;
-    width: 70px;
-    display: block;
-    margin: 0 auto;
-  }
-`;
-
-const TitleDescription = styled.div`
-  max-width: 750px;
-  color: #ffffff;
-  margin: 0 auto;
-  font-size: 1.1875rem;
-  margin-bottom: 90px;
-`;
-
-const FeatureContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-`;
-
-const Feature = styled.div`
-  width: 49%;
-  text-align: left;
-  border: 1px solid black;
-  border-radius: 17px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 45px 0px;
-`;
-
-const InnerContainer = styled.div`
-  padding: 0 20px;
-`;
-
-const Image = styled.img`
-  margin-left: 20px;
-`;
-
-const Title = styled.h2`
-  font-size: 1.125rem;
-  color: #6d6d6d;
-  font-weight: bold;
-  text-transform: uppercase;
-`;
-
-const Description = styled.p`
-  font-size: 0.875rem;
-  color: #555555;
-  max-width: 370px;
-`;
 
 export default Features;

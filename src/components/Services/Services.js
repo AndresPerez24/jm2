@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import service1 from "../../Images/service1.png";
+import forklift from "../../Images/forklift.png";
+import magnifyingGlass from "../../Images/magnifying-glass.png";
+import tools from "../../Images/tools.png";
+import wheel from "../../Images/wheel.png";
+import { ServiceContainer, MainContainer, Container, Img, Title, Description } from "./ServicesStyles";
 
 class Services extends Component {
   render() {
@@ -8,39 +11,33 @@ class Services extends Component {
       <ServiceContainer>
         <MainContainer>
           <Container>
-            <Img src={service1} alt="" />
+            <Img backgroundImage={wheel} />
             <Title>Venta de ruedas</Title>
             <Description>
-              Distribuimos las principales marcas de ruedas para montacargas
-              mejorando el rendimiento de los equipos y el traslado de
+              Distribuimos las principales marcas de ruedas para montacargas mejorando el rendimiento de los equipos y el traslado de
               materiales.
             </Description>
           </Container>
           <Container>
-            <Img src={service1} alt="" />
-            <Title>Venta de ruedas</Title>
+            <Img backgroundImage={forklift} />
+            <Title>Venta y alquiler de montacargas</Title>
             <Description>
-              Distribuimos las principales marcas de ruedas para montacargas
-              mejorando el rendimiento de los equipos y el traslado de
-              materiales.
+              Contamos con equipos eléctricos para todas las necesidades de almacenamiento, así como equipos paletizadores eléctricos de
+              operador montado y caminando.
             </Description>
           </Container>
           <Container>
-            <Img src={service1} alt="" />
-            <Title>Venta de ruedas</Title>
+            <Img backgroundImage={tools} />
+            <Title>Venta de repuestos de montacargas</Title>
             <Description>
-              Distribuimos las principales marcas de ruedas para montacargas
-              mejorando el rendimiento de los equipos y el traslado de
-              materiales.
+              Distribuimos todas las marcas de equipos eléctricos y combustión, teniendo en cuenta las necesidades de nuestros clientes.
             </Description>
           </Container>
           <Container>
-            <Img src={service1} alt="" />
-            <Title>Venta de ruedas</Title>
+            <Img backgroundImage={magnifyingGlass} />
+            <Title>Diagnóstico y mantenimiento</Title>
             <Description>
-              Distribuimos las principales marcas de ruedas para montacargas
-              mejorando el rendimiento de los equipos y el traslado de
-              materiales.
+              Atendemos de manera preventiva y correctiva el funcionamiento de los productos garantizando su mejor desempeño.
             </Description>
           </Container>
         </MainContainer>
@@ -48,45 +45,5 @@ class Services extends Component {
     );
   }
 }
-
-const ServiceContainer = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 20px 120px;
-`;
-
-const MainContainer = styled.div`
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  color: #ffffff;
-`;
-
-const Container = styled.div`
-  width: 24%;
-  text-align: center;
-  border-radius: 15px;
-  background-color: #fb7d0b;
-  padding: 50px 0 80px;
-`;
-
-const Img = styled.img`
-  margin-bottom: 35px;
-`;
-
-const Title = styled.h2`
-  font-size: 1rem;
-  max-width: 220px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 25px;
-`;
-
-const Description = styled.p`
-  font-size: 1rem;
-  max-width: 220px;
-  margin: 0 auto;
-`;
 
 export default Services;
