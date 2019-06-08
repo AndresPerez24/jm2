@@ -50,6 +50,15 @@ textarea::placeholder {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("./fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-Light.woff") format("woff"),

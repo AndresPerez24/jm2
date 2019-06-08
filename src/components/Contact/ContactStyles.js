@@ -3,8 +3,12 @@ import contactBg from "../../Images/contact-bg.jpg";
 
 export const ContactContainer = styled.div`
   background-image: ${`url(${contactBg})`};
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 80px 22px;
   position: relative;
+  z-index: 1;
 `;
 
 export const Container = styled.div`

@@ -11,7 +11,7 @@ class Hero extends Component {
   render() {
     const settings = {
       arrows: false,
-      autoplay: true,
+      // autoplay: true,
       dots: true,
       infinite: true,
       slidesToScroll: 1,
@@ -50,7 +50,7 @@ class Hero extends Component {
               <Button href="#">Conozca nuestro equipos</Button>
             </Container>
           </Slide>
-          <Slide backgroundImage={hero4}>
+          <Slide backgroundImage={hero4} backgroundPosition="top">
             <Container>
               <Title maxWidth="520px">La Mayor Variedad del Mercado</Title>
               <Description>

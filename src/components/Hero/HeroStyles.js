@@ -21,15 +21,15 @@ export const MainContainer = styled.div`
 
 export const Slide = styled.div`
   background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
-  background-position: center;
+  background-position: ${({ backgroundPosition }) => backgroundPosition || "center"};
   background-size: cover;
-  min-height: 785px;
+  min-height: 740px;
 `;
 
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 1200px;
-  padding: 240px 20px;
+  padding: 160px 20px;
 `;
 
 export const Title = styled.h1`
@@ -53,7 +53,7 @@ export const Label = styled.span`
   font-weight: 600;
 `;
 
-export const Button = styled.span`
+export const Button = styled.div`
   border-radius: 30px;
   border: 4px solid #fd7f38;
   color: white;
@@ -61,6 +61,7 @@ export const Button = styled.span`
   font-size: 0.875rem;
   font-weight: 800;
   letter-spacing: 5px;
+  max-width: 450px;
   padding: 13px 47px;
   text-align: center;
   text-transform: uppercase;
