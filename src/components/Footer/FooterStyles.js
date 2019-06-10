@@ -1,20 +1,5 @@
 import styled from "styled-components";
 
-export const Images = styled.div`
-  align-items: center;
-  display: flex;
-  height: 120px;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 20px;
-`;
-
-export const ImagesContainer = styled.div`
-  box-shadow: 0 0 34px 1px rgba(0, 0, 0, 0.5);
-  position: relative;
-`;
-
 export const Container = styled.div`
   background-color: #f57502;
   font-size: 0;
@@ -73,4 +58,3 @@ export const LogoFooter = styled.img`
   width: 500px;
 `;
 
-export const Logo = styled.img``;

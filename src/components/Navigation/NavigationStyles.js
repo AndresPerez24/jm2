@@ -22,10 +22,15 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const StyledButtom = styled(Link)`
+export const StyledButton = styled(Link)`
   background-color: #ff8f31;
   border-radius: 19px;
   color: #ffffff;
   padding: 11px 47px;
   text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 10px 3px #ff8f31;
+  }
 `;

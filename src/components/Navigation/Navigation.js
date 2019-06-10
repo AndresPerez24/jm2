@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ListItem, StyledLink, StyledButtom } from "./NavigationStyles";
+import { ListItem, StyledLink, StyledButton } from "./NavigationStyles";
 
 class Navigation extends Component {
   render() {
@@ -19,7 +19,7 @@ class Navigation extends Component {
             <StyledLink to="/contact/">Contacto</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledButtom to="/equipos/">Equipos</StyledButtom>
+            <StyledButton to="/equipos/">Equipos</StyledButton>
           </ListItem>
         </ul>
       </nav>

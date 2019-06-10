@@ -79,3 +79,21 @@ export const Img = styled.img`
   bottom: 0;
   left: 40px;
 `;
+
+export const ImagesContainer = styled.div`
+  box-shadow: 0 0 34px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-color: #fff;
+`;
+
+export const Images = styled.div`
+  align-items: center;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+`;
+
+export const Logo = styled.img``;

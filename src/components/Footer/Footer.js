@@ -1,20 +1,10 @@
 import React, { Component, Fragment } from "react";
-import ruedas from "../../Images/ruedas.png";
-import partes from "../../Images/partes.png";
-import equipos from "../../Images/equipos.png";
-import { Container, Images, InnerContainer, Logo, List, ListItem, Image, Label, LogoFooter, ImagesContainer } from "./FooterStyles";
+import { Container, InnerContainer, List, ListItem, Image, Label, LogoFooter } from "./FooterStyles";
 
 class Footer extends Component {
   render() {
     return (
       <Fragment>
-        <ImagesContainer>
-          <Images>
-            <Logo src={ruedas} />
-            <Logo src={partes} />
-            <Logo src={equipos} />
-          </Images>
-        </ImagesContainer>
         <Container>
           <InnerContainer>
             <List>
