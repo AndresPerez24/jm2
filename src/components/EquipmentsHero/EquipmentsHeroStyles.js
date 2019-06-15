@@ -61,7 +61,7 @@ export const Label = styled.div`
   transform: translate(50%, 50%);
   bottom: 0;
   padding: 12px 36px;
-  z-index: 98;
+  z-index: 8;
 `;
 
 export const LabelItem = styled.div`

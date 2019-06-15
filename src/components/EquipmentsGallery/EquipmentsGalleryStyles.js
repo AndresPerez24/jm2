@@ -9,16 +9,17 @@ export const MainContainer = styled.div`
 
 export const Card = styled.div`
   align-items: center;
-  display: flex;
-  justify-content: center;
   background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(23, 28, 33, 0.06);
+  display: flex;
   height: 276px;
+  justify-content: center;
   padding: 24px;
-  cursor: pointer;
-  border: 2px solid #fff;
+  position: relative;
+  transition: 0.3s;
 
   &:hover {
-    border-color: #f57502;
+    box-shadow: 0 7px 20px 0 rgba(23, 28, 33, 0.19);
   }
 `;
 
@@ -28,12 +29,38 @@ export const Image = styled.img`
 `;
 
 export const Item = styled.div`
+  display: inline-block;
   padding: 12px;
   width: 25%;
-  display: inline-block;
 `;
 
 export const Container = styled.div`
-  width: 100%;
   max-width: 1200px;
+  width: 100%;
+`;
+
+export const Bold = styled.div`
+  font-weight: 700;
+  letter-spacing: 2px;
+`;
+
+export const Link = styled.a`
+  align-items: center;
+  background-color: rgba(251, 125, 11, 0.7);
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.3s;
+  z-index: 9;
+
+  &:hover {
+    opacity: 1;
+  }
 `;

@@ -11,7 +11,7 @@ class Hero extends Component {
   render() {
     const settings = {
       arrows: false,
-      // autoplay: true,
+      autoplay: true,
       dots: true,
       infinite: true,
       slidesToScroll: 1,
