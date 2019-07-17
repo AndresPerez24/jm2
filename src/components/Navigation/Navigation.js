@@ -16,6 +16,9 @@ class Navigation extends Component {
             <StyledLink to="/">Diferenciales</StyledLink>
           </ListItem>
           <ListItem>
+            <StyledLink to="/ruedas">Ruedas</StyledLink>
+          </ListItem>
+          <ListItem>
             <StyledLink to="/contact/">Contacto</StyledLink>
           </ListItem>
           <ListItem>
