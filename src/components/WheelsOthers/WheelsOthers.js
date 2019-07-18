@@ -9,31 +9,32 @@ export default function WheelsOthers() {
         <Card>
           <Image src={require("../../Images/wheels-3.png")} alt="Superthane" />
           <div>
-            <SubTitle>Superthane</SubTitle>
-            <Description>Reduzca sus costos de mantenimiento</Description>
+            <SubTitle>SPS</SubTitle>
+            <Description>La Próxima Generación de Neumáticos de Prensado de Poliuretano Blando.</Description>
           </div>
           <MoreInfo>
             <Specs>
               <SpecsTitle>Caracterìsticas</SpecsTitle>
-              <SpecsItem>-  Especial para recorridos de trabajos intermedios</SpecsItem>
+              <SpecsItem>- Especiales para caba de congelamiento</SpecsItem>
+              <SpecsItem>- Manejo más suave en pisos ásperos</SpecsItem>
+              <SpecsItem>- Muelles de carga Congeladores</SpecsItem>
             </Specs>
-            <Image src={require("../../Images/spec-1.png")} alt="A95" />
+            <Image src={require("../../Images/spec-2.png")} alt="A95" />
           </MoreInfo>
         </Card>
         <Card>
           <div>
             <Image src={require("../../Images/wheels-4.png")} alt="Superthane" />
             <div>
-              <SubTitle>Falconium</SubTitle>
-              <Description>Durabilidad Inigualable</Description>
+              <SubTitle>Hyload</SubTitle>
+              <Description>La Solución Definitiva</Description>
             </div>
           </div>
           <MoreInfo>
             <Specs>
               <SpecsTitle>Caracterìsticas</SpecsTitle>
-              <SpecsItem>- Alta capacidad de carga</SpecsItem>
-              <SpecsItem>- Extrema resistencia a desprendimientos y lagrimeo</SpecsItem>
-              <SpecsItem>- Muy baja resistencia a la rodadura</SpecsItem>
+              <SpecsItem>- Trabajo liviano</SpecsItem>
+              <SpecsItem>- Preparación depedidos</SpecsItem>
             </Specs>
             <Image src={require("../../Images/spec-1.png")} alt="A95" />
           </MoreInfo>
@@ -42,18 +43,18 @@ export default function WheelsOthers() {
           <div>
             <Image src={require("../../Images/wheels-5.png")} alt="Superthane" />
             <div>
-              <SubTitle>Falconium</SubTitle>
-              <Description>Durabilidad Inigualable</Description>
+              <SubTitle>Vulkollan</SubTitle>
+              <Description>Máximo Rendimiento</Description>
             </div>
           </div>
           <MoreInfo>
             <Specs>
               <SpecsTitle>Caracterìsticas</SpecsTitle>
-              <SpecsItem>- Alta capacidad de carga</SpecsItem>
+              <SpecsItem>- Extrema resistenciaa desprendimientos y lagrimeo</SpecsItem>
               <SpecsItem>- Extrema resistencia a desprendimientos y lagrimeo</SpecsItem>
               <SpecsItem>- Muy baja resistencia a la rodadura</SpecsItem>
             </Specs>
-            <Image src={require("../../Images/spec-1.png")} alt="A95" />
+            <Image src={require("../../Images/spec-3.png")} alt="A95" />
           </MoreInfo>
         </Card>
       </Container>
