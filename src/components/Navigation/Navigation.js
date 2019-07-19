@@ -10,19 +10,19 @@ class Navigation extends Component {
             <StyledLink to="/">Home</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink to="/">Nosotros</StyledLink>
+            <StyledLink to="/#sobre-nosotros">Nosotros</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink to="/">Diferenciales</StyledLink>
+            <StyledLink to="/#diferenciales">Diferenciales</StyledLink>
           </ListItem>
           <ListItem>
             <StyledLink to="/ruedas">Ruedas</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledLink to="/contact/">Contacto</StyledLink>
+            <StyledLink to="/#contacto">Contacto</StyledLink>
           </ListItem>
           <ListItem>
-            <StyledButton to="/equipos/">Equipos</StyledButton>
+            <StyledButton to="/equipos">Equipos</StyledButton>
           </ListItem>
         </ul>
       </nav>
