@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
@@ -70,7 +71,7 @@ export const Label = styled.span`
   font-weight: 600;
 `;
 
-export const Button = styled.div`
+export const Button = styled(Link)`
   border-radius: 30px;
   border: 4px solid #fd7f38;
   color: white;

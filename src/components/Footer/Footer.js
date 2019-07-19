@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Container, InnerContainer, List, ListItem, Image, Label, LogoFooter } from "./FooterStyles";
+import { Container, InnerContainer, List, ListItem, Image, Label, LogoFooter, StyledLink } from "./FooterStyles";
 
 class Footer extends Component {
   render() {
@@ -9,19 +9,19 @@ class Footer extends Component {
           <InnerContainer>
             <List>
               <ListItem>
-                <a href="/">Home</a>
+                <StyledLink to="/">Home</StyledLink>
               </ListItem>
               <ListItem>
-                <a href="/">Sobre Nosotros</a>
+                <StyledLink to="/#sobre-nosotros">Sobre Nosotros</StyledLink>
               </ListItem>
               <ListItem>
-                <a href="/">Diferenciales</a>
+                <StyledLink to="/#diferenciales">Diferenciales</StyledLink>
               </ListItem>
               <ListItem>
-                <a href="/">Contacto</a>
+                <StyledLink to="/#contacto">Contacto</StyledLink>
               </ListItem>
               <ListItem>
-                <a href="/">Equipos</a>
+                <StyledLink to="/equipos">Equipos</StyledLink>
               </ListItem>
             </List>
             <List>
@@ -40,10 +40,10 @@ class Footer extends Component {
             </List>
             <List>
               <ListItem>
-                <a href="/" target="_blank">
+                <a href="https://www.facebook.com/Soluciones-Logisticas-JM2-323220237727522/" rel="noopener noreferrer" target="_blank">
                   <Image src={require("../../Images/facebook.svg")} alt="Facebook" />
                 </a>
-                <a href="/" target="_blank">
+                <a href="https://www.instagram.com/solucioneslogisticasjm2/" target="_blank" rel="noopener noreferrer">
                   <Image src={require("../../Images/instagram.svg")} alt="Instagram" />
                 </a>
               </ListItem>
