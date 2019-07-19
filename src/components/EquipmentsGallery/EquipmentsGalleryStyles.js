@@ -64,3 +64,10 @@ export const Link = styled.a`
     opacity: 1;
   }
 `;
+
+export const Description = styled.div`
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 24px;
+  text-align: center;
+`;

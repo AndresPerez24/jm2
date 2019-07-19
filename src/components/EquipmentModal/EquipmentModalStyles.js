@@ -7,9 +7,12 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   left: 0;
+  opacity: ${({ isActive }) => (isActive ? "1" : "0")};
   position: fixed;
   right: 0;
   top: 0;
+  transition: 0.3s;
+  visibility: ${({ isActive }) => (isActive ? "visible" : "hidden")};
   z-index: 100;
 
   .slick-dots {
@@ -61,13 +64,6 @@ export const Header = styled.div`
 
 export const Bold = styled.div`
   font-weight: 700;
-`;
-
-export const Description = styled.div`
-  font-size: 15px;
-  font-weight: 300;
-  margin-bottom: 24px;
-  text-align: center;
 `;
 
 export const Close = styled.div`

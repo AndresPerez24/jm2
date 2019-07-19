@@ -44,7 +44,11 @@ export const Card = styled.div`
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
-  padding: 36px;
+  height: ${({ isSelected, height }) => (isSelected ? height : "374px")};
+  overflow: hidden;
+  padding: 36px 36px 46px;
+  position: relative;
+  transition: 0.5s;
   width: 32%;
 `;
 
@@ -79,6 +83,15 @@ export const Image = styled.img`
 
 export const ImageItem = styled.img`
   width: 100px;
+`;
+
+export const Arrow = styled.img`
+  bottom: 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 50%;
+  transform: ${({ isSelected }) => (isSelected ? "translateX(50%) rotate(180deg)" : "translateX(50%) rotate(0)")};
+  transition: 0.5s;
 `;
 
 export const Item = styled.div`

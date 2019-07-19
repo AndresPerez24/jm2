@@ -42,7 +42,11 @@ export const Card = styled.div`
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
+  height: ${({ isSelected }) => (isSelected ? "536px" : "280px")};
+  overflow: hidden;
   padding: 48px;
+  position: relative;
+  transition: 0.5s;
   width: 49%;
 `;
 
@@ -145,4 +149,13 @@ export const Link = styled.a`
   &:hover {
     opacity: 1;
   }
+`;
+
+export const Arrow = styled.img`
+  bottom: 15px;
+  cursor: pointer;
+  position: absolute;
+  right: 50%;
+  transform: ${({ isSelected }) => (isSelected ? "translateX(50%) rotate(180deg)" : "translateX(50%) rotate(0)")};
+  transition: 0.5s;
 `;
