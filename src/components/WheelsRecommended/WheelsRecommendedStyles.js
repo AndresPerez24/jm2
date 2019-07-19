@@ -1,77 +1,110 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  background: #e3e1e1;
-  padding: 96px 72px 72px;
+  padding: 96px 72px 0;
 `;
 
 export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   max-width: 1400px;
   width: 100%;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
 `;
 
 export const Title = styled.div`
-  text-align: center;
+  color: #5f5f5f;
   font-size: 28px;
-  color: #5F5F5F;
   margin-bottom: 40px;
+  text-align: center;
 `;
 
 export const SubTitle = styled.div`
-  font-size: 45px;
-  color: #838383;
+  color: ${({ color }) => color};
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 `;
 
 export const Flex = styled.div`
-  display: flex;
   align-items: center;
-`; 
+  display: flex;
+`;
 
 export const Description = styled.div`
-  text-align: center;
-  font-size: 26px;
-  color: #5F5F5F;
+  color: #5f5f5f;
+  font-size: 22px;
   max-width: 255px;
 `;
 
 export const Card = styled.div`
   align-items: center;
   background: #fff;
-  box-shadow: 0 2px 4px 0 rgba(23, 28, 33, 0.06);
-  padding: 40px 24px;
-  border-radius: 20px;
+  border-radius: 18px;
+  box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
+  padding: 48px;
+  width: 49%;
 `;
 
 export const Specs = styled.div`
-  border-left: 1px solid;
-  padding-left: 60px;
-
+  border-left: 1px solid #979797;
+  height: 207px;
+  padding-left: 36px;
 `;
 
 export const SpecsTitle = styled.div`
-  font-size: 19px;
   color: #838383;
+  font-size: 19px;
   font-weight: bold;
+  margin-bottom: 24px;
   text-transform: uppercase;
-  margin-bottom: 40px;
 `;
 
-export const SpecsItem = styled.span`
-  font-size: 19px;
-  max-width: 240px;
+export const SpecsList = styled.ul`
   display: block;
-  margin-bottom: 15px; 
+  font-size: 19px;
   font-weight: 100;
+  margin-bottom: 15px;
+  padding-left: 14px;
+`;
+
+export const SpecsItem = styled.li`
+  color: #838383;
+  display: block;
+  font-size: 19px;
+  font-weight: 100;
+  margin-bottom: 15px;
+  position: relative;
+
+  &:before {
+    background-color: #838383;
+    content: "";
+    height: 1px;
+    left: -13px;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+  }
 `;
 
 export const Image = styled.img`
   max-height: 100%;
   max-width: 100%;
+  width: 50%;
+`;
+
+export const ImageItemContainer = styled.div`
+  text-align: center;
+  width: 300px;
+`;
+
+export const ImageItem = styled.img`
+  width: 100px;
+`;
+
+export const Info = styled.div`
+  max-width: 100%;
+  width: 50%;
 `;
 
 export const Item = styled.div`
@@ -88,9 +121,9 @@ export const Bold = styled.div`
 
 export const MoreInfo = styled.div`
   align-items: center;
-  margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
 `;
 
 export const Link = styled.a`

@@ -1,78 +1,84 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  background: #e3e1e1;
-  padding: 96px 72px 72px;
+  padding: 40px 72px 0;
 `;
 
 export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   max-width: 1400px;
   width: 100%;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
 `;
 
 export const Title = styled.div`
-  text-align: center;
+  color: #5f5f5f;
   font-size: 28px;
-  color: #5F5F5F;
   margin-bottom: 40px;
+  text-align: center;
 `;
 
 export const SubTitle = styled.div`
-  font-size: 45px;
-  color: #838383;
+  color: ${({ color }) => color};
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 `;
 
 export const Flex = styled.div`
-  display: flex;
   align-items: center;
-`; 
+  display: flex;
+`;
 
 export const Description = styled.div`
-  text-align: center;
-  font-size: 26px;
-  color: #5F5F5F;
-  max-width: 255px;
-  margin: 0 auto;
+  border-bottom: 1px solid #979797;
+  color: #5f5f5f;
+  font-size: 19px;
+  height: 93px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
 `;
 
 export const Card = styled.div`
-  text-align: center;
   background: #fff;
-  box-shadow: 0 2px 4px 0 rgba(23, 28, 33, 0.06);
-  padding: 40px 24px;
   border-radius: 20px;
+  box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
+  padding: 36px;
   width: 32%;
 `;
 
-export const  Specs = styled.div`
- margin-bottom: 30px;
+export const TextAlignCenter = styled.div`
+  text-align: center;
+`;
+
+export const Specs = styled.div`
+  margin-bottom: 30px;
 `;
 
 export const SpecsTitle = styled.div`
-  font-size: 19px;
   color: #838383;
+  font-size: 17px;
   font-weight: bold;
+  margin-bottom: 24px;
   text-transform: uppercase;
-  margin-bottom: 40px;
 `;
 
 export const SpecsItem = styled.span`
-  font-size: 19px;
-  max-width: 240px;
+  color: #838383;
   display: block;
-  margin: 0 auto 15px;
+  font-size: 15px;
   font-weight: 100;
+  margin: 0 auto 15px;
+  max-width: 240px;
 `;
 
 export const Image = styled.img`
-  max-height: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
+  height: 180px;
+`;
+
+export const ImageItem = styled.img`
+  width: 100px;
 `;
 
 export const Item = styled.div`

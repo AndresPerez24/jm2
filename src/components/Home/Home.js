@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Contact from "../Contact/Contact";
 import Features from "../Features/Features";
-import Hero from "../Hero/Hero";
+import HomePageHero from "../HomePageHero/HomePageHero";
 import Service from "../Services/Services";
 import { HomeContainer, Container, Title, Description } from "./HomeStyles";
 
@@ -9,7 +9,7 @@ class Home extends Component {
   render() {
     return (
       <HomeContainer>
-        <Hero />
+        <HomePageHero />
         <Container>
           <Title>
             Sobre <strong>Nosotros</strong>

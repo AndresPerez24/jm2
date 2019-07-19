@@ -1,42 +1,70 @@
 import React from "react";
-import { MainContainer, Card, Image, Container, Bold, Title, SubTitle, Description, MoreInfo, Flex, Specs, SpecsItem, SpecsTitle } from "./WheelsRecommendedStyles";
+import {
+  Bold,
+  Card,
+  Container,
+  Description,
+  Flex,
+  Image,
+  ImageItem,
+  Info,
+  MainContainer,
+  ImageItemContainer,
+  MoreInfo,
+  Specs,
+  SpecsItem,
+  SpecsList,
+  SpecsTitle,
+  SubTitle,
+  Title
+} from "./WheelsRecommendedStyles";
 
 export default function WheelsRecommended() {
   return (
     <MainContainer>
-      <Title>Descubra nuestras <Bold>ruedas recomendadas</Bold></Title>
+      <Title>
+        Descubra nuestras <Bold>ruedas recomendadas</Bold>
+      </Title>
       <Container>
         <Card>
           <Flex>
             <Image src={require("../../Images/wheels-1.png")} alt="Superthane" />
-            <div>
-              <SubTitle>Superthane</SubTitle>
+            <Info>
+              <SubTitle color="#F07339">Superthane</SubTitle>
               <Description>Reduzca sus costos de mantenimiento</Description>
-            </div>
+            </Info>
           </Flex>
           <MoreInfo>
-            <Image src={require("../../Images/spec-1.png")} alt="A95" />
+            <ImageItemContainer>
+              <ImageItem src={require("../../Images/spec-1.png")} alt="A95" />
+            </ImageItemContainer>
             <Specs>
               <SpecsTitle>Caracterìsticas</SpecsTitle>
-              <SpecsItem>-  Especial para recorridos de trabajos intermedios</SpecsItem>
+              <SpecsList>
+                <SpecsItem>Especial para recorridos de trabajos intermedios</SpecsItem>
+              </SpecsList>
             </Specs>
           </MoreInfo>
         </Card>
         <Card>
           <Flex>
             <Image src={require("../../Images/wheels-2.png")} alt="Superthane" />
-            <div>
-              <SubTitle>Falconium</SubTitle>
+            <Info>
+              <SubTitle color="#46B0D8">Falconium</SubTitle>
               <Description>Durabilidad Inigualable</Description>
-            </div>
+            </Info>
           </Flex>
           <MoreInfo>
-            <Image src={require("../../Images/spec-1.png")} alt="A95" />
+            <ImageItemContainer>
+              <ImageItem src={require("../../Images/spec-1.png")} alt="A95" />
+            </ImageItemContainer>
             <Specs>
               <SpecsTitle>Caracterìsticas</SpecsTitle>
-              <SpecsItem>- Alta capacidad de carga</SpecsItem>
-              <SpecsItem>- Extrema resistencia a desprendimientos y lagrimeo</SpecsItem>
-              <SpecsItem>- Muy baja resistencia a la rodadura</SpecsItem>
+              <SpecsList>
+                <SpecsItem>Alta capacidad de carga</SpecsItem>
+                <SpecsItem>Extrema resistencia a desprendimientos y lagrimeo</SpecsItem>
+                <SpecsItem>Muy baja resistencia a la rodadura</SpecsItem>
+              </SpecsList>
             </Specs>
           </MoreInfo>
         </Card>

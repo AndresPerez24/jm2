@@ -1,41 +1,39 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  background: #e3e1e1;
-  padding: 96px 72px 72px;
+  padding: 46px 72px 72px;
+`;
+
+export const InnerContainer = styled.div`
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
 `;
 
 export const Container = styled.div`
-  max-width: 1560px;
-  width: 100%;
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
 `;
 
 export const Title = styled.div`
-  text-align: center;
+  border-radius: 34px;
+  box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
+  color: #5f5f5f;
   font-size: 28px;
-  color: #5F5F5F;
   margin-bottom: 40px;
-  border: 1px solid;
-  border-radius: 20px;
   padding: 10px 0px;
+  text-align: center;
 `;
 
 export const Wheel = styled.img`
-  max-height: 100%;
-  max-width: 100%;
+  height: 170px;
   margin-bottom: 20px;
 `;
 
-
-export const Text = styled.span`
+export const Text = styled.div`
   color: #404042;
   font-size: 14px;
 `;
-
-
 
 export const Item = styled.div`
   max-width: 135px;

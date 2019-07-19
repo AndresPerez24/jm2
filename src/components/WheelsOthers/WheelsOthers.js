@@ -1,15 +1,34 @@
 import React from "react";
-import { MainContainer, Card, Image, Container, Bold, Title, SubTitle, Description, MoreInfo , Specs, SpecsItem, SpecsTitle } from "./WheelsOthersStyles";
+import {
+  Bold,
+  Card,
+  Container,
+  Description,
+  Image,
+  ImageItem,
+  MainContainer,
+  MoreInfo,
+  Specs,
+  SpecsItem,
+  SpecsTitle,
+  SubTitle,
+  TextAlignCenter,
+  Title
+} from "./WheelsOthersStyles";
 
 export default function WheelsOthers() {
   return (
     <MainContainer>
-      <Title>Conozca <Bold>nuestras otras opciones</Bold></Title>
+      <Title>
+        Conozca <Bold>nuestras otras opciones</Bold>
+      </Title>
       <Container>
         <Card>
-          <Image src={require("../../Images/wheels-3.png")} alt="Superthane" />
+          <TextAlignCenter>
+            <Image src={require("../../Images/wheels-3.png")} alt="Superthane" />
+          </TextAlignCenter>
           <div>
-            <SubTitle>SPS</SubTitle>
+            <SubTitle color="#ED3833">SPS</SubTitle>
             <Description>La Próxima Generación de Neumáticos de Prensado de Poliuretano Blando.</Description>
           </div>
           <MoreInfo>
@@ -19,14 +38,16 @@ export default function WheelsOthers() {
               <SpecsItem>- Manejo más suave en pisos ásperos</SpecsItem>
               <SpecsItem>- Muelles de carga Congeladores</SpecsItem>
             </Specs>
-            <Image src={require("../../Images/spec-2.png")} alt="A95" />
+            <ImageItem src={require("../../Images/spec-2.png")} alt="A95" />
           </MoreInfo>
         </Card>
         <Card>
           <div>
-            <Image src={require("../../Images/wheels-4.png")} alt="Superthane" />
+            <TextAlignCenter>
+              <Image src={require("../../Images/wheels-4.png")} alt="Superthane" />
+            </TextAlignCenter>
             <div>
-              <SubTitle>Hyload</SubTitle>
+              <SubTitle color="#A4C239">Hyload</SubTitle>
               <Description>La Solución Definitiva</Description>
             </div>
           </div>
@@ -36,14 +57,16 @@ export default function WheelsOthers() {
               <SpecsItem>- Trabajo liviano</SpecsItem>
               <SpecsItem>- Preparación depedidos</SpecsItem>
             </Specs>
-            <Image src={require("../../Images/spec-1.png")} alt="A95" />
+            <ImageItem src={require("../../Images/spec-1.png")} alt="A95" />
           </MoreInfo>
         </Card>
         <Card>
           <div>
-            <Image src={require("../../Images/wheels-5.png")} alt="Superthane" />
+            <TextAlignCenter>
+              <Image src={require("../../Images/wheels-5.png")} alt="Superthane" />
+            </TextAlignCenter>
             <div>
-              <SubTitle>Vulkollan</SubTitle>
+              <SubTitle color="#E2C242">Vulkollan</SubTitle>
               <Description>Máximo Rendimiento</Description>
             </div>
           </div>
@@ -54,7 +77,7 @@ export default function WheelsOthers() {
               <SpecsItem>- Extrema resistencia a desprendimientos y lagrimeo</SpecsItem>
               <SpecsItem>- Muy baja resistencia a la rodadura</SpecsItem>
             </Specs>
-            <Image src={require("../../Images/spec-3.png")} alt="A95" />
+            <ImageItem src={require("../../Images/spec-3.png")} alt="A95" />
           </MoreInfo>
         </Card>
       </Container>
