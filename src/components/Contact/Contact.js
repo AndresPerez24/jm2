@@ -12,20 +12,22 @@ class Contact extends Component {
         <ContactContainer>
           <Container>
             <Title>Contáctenos</Title>
-            <Form action="">
-              <Input type="text" name="Nombre" placeholder="Nombre" />
-              <Input type="text" name="Celular" placeholder="Celular" />
-              <Input type="text" name="Email" placeholder="Email" />
-              <Input type="text" name="Ciudad" placeholder="Ciudad" />
+            {/* <Form action="https://formspree.io/mgrgajjx" method="POST"> */}
+            <Form>
+              <Input type="text" name="name" placeholder="Nombre" required />
+              <Input type="text" name="phone" placeholder="Celular" required />
+              <Input type="email" name="email" placeholder="Email" required />
+              <Input type="text" name="city" placeholder="Ciudad" required />
               <Textarea
-                name=""
-                id=""
+                required
+                name="message"
+                id="message"
                 cols="30"
                 rows="10"
                 placeholder="Déjenos su mensaje o solicitud de su producto 
 y le responderemos en la menor brevedad posible."
               />
-              <Button>Enviar</Button>
+              <Button type="submit">Enviar</Button>
             </Form>
           </Container>
           <Img src={engineer} />

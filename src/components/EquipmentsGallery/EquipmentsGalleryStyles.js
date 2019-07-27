@@ -31,6 +31,7 @@ export const Image = styled.img`
 export const Item = styled.div`
   display: inline-block;
   padding: 12px;
+  vertical-align: middle;
   width: 25%;
 `;
 
