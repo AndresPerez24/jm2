@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const MainContainer = styled.div`
-  padding: 96px 72px 0;
+  padding: 96px 19px 0;
+
+  @media ${device.laptop} {
+    padding: 96px 72px 0;
+  }
 `;
 
 export const Container = styled.div`
@@ -10,6 +15,11 @@ export const Container = styled.div`
   margin: 0 auto;
   max-width: 1400px;
   width: 100%;
+  flex-wrap: wrap;
+
+  @media ${device.laptop} {
+    flex-wrap: nowrap;
+  }
 `;
 
 export const Title = styled.div`
@@ -21,9 +31,13 @@ export const Title = styled.div`
 
 export const SubTitle = styled.div`
   color: ${({ color }) => color};
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 24px;
+
+  @media ${device.laptop} {
+    font-size: 32px;
+  }
 `;
 
 export const Flex = styled.div`
@@ -33,8 +47,12 @@ export const Flex = styled.div`
 
 export const Description = styled.div`
   color: #5f5f5f;
-  font-size: 22px;
+  font-size: 13px;
   max-width: 255px;
+
+  @media ${device.laptop} {
+    font-size: 22px;
+  }
 `;
 
 export const Card = styled.div`
@@ -42,12 +60,20 @@ export const Card = styled.div`
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
-  height: ${({ isSelected }) => (isSelected ? "536px" : "280px")};
+  height: ${({ isSelected }) => (isSelected ? "436px" : "160px")};
   overflow: hidden;
-  padding: 48px;
+  padding: 18px 20px;
+  width: 100%;
   position: relative;
   transition: 0.5s;
-  width: 49%;
+  margin-bottom: 30px;
+
+  @media ${device.laptop} {
+    height: ${({ isSelected }) => (isSelected ? "536px" : "280px")};
+    margin-bottom: 0;
+    width: 49%;
+    padding: 48px;
+  }
 `;
 
 export const Specs = styled.div`
@@ -58,27 +84,36 @@ export const Specs = styled.div`
 
 export const SpecsTitle = styled.div`
   color: #838383;
-  font-size: 19px;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: 24px;
   text-transform: uppercase;
+
+  @media ${device.laptop} {
+    font-size: 19px;
+  }
 `;
 
 export const SpecsList = styled.ul`
   display: block;
-  font-size: 19px;
+  font-size: 13px;
   font-weight: 100;
   margin-bottom: 15px;
   padding-left: 14px;
+
 `;
 
 export const SpecsItem = styled.li`
   color: #838383;
   display: block;
-  font-size: 19px;
+  font-size: 13px;
   font-weight: 100;
   margin-bottom: 15px;
   position: relative;
+
+  @media ${device.laptop} {
+    font-size: 19px;
+  }
 
   &:before {
     background-color: #838383;
@@ -103,7 +138,11 @@ export const ImageItemContainer = styled.div`
 `;
 
 export const ImageItem = styled.img`
-  width: 100px;
+  width: 70px;
+
+  @media ${device.laptop} {
+    width: 100px;
+  }
 `;
 
 export const Info = styled.div`

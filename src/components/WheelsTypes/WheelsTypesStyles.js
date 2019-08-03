@@ -12,7 +12,8 @@ export const InnerContainer = styled.div`
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 export const Title = styled.div`
@@ -38,4 +39,5 @@ export const Text = styled.div`
 export const Item = styled.div`
   max-width: 135px;
   text-align: center;
+  margin-bottom: 20px;
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import featureBg from "../../Images/features-bg.jpg";
+import { device } from '../../BreakPoints';
 
 export const MainContainer = styled.div`
   background-attachment: fixed;
@@ -57,7 +58,11 @@ export const Feature = styled.div`
   margin-bottom: 30px;
   padding: 45px;
   text-align: left;
-  width: 49%;
+  width: 100%;
+
+  @media ${device.tablet} {
+    width: 49%;
+  }
 `;
 
 export const Image = styled.img`

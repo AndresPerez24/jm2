@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import contactBg from "../../Images/contact-bg.jpg";
+import { device } from '../../BreakPoints';
 
 export const ContactContainer = styled.div`
   background-image: ${`url(${contactBg})`};
@@ -78,6 +79,11 @@ export const Img = styled.img`
   position: absolute;
   bottom: 0;
   left: 40px;
+  display: none;
+
+  @media ${device.laptop} {
+    display: initial;
+  }
 `;
 
 export const ImagesContainer = styled.div`
@@ -96,4 +102,7 @@ export const Images = styled.div`
   padding: 0 20px;
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  max-width: 223px;
+  width: 30%;
+`;

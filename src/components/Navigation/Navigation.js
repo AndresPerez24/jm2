@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { ListItem, StyledLink, StyledButton } from "./NavigationStyles";
+import { ListItem, StyledLink, StyledButton, Nav } from "./NavigationStyles";
 
 class Navigation extends Component {
   render() {
     return (
-      <nav>
+      <Nav>
         <ul>
           <ListItem>
             <StyledLink to="/">Home</StyledLink>
@@ -25,7 +25,7 @@ class Navigation extends Component {
             <StyledButton to="/equipos">Equipos</StyledButton>
           </ListItem>
         </ul>
-      </nav>
+      </Nav>
     );
   }
 }

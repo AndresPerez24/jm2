@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const Background = styled.div`
   background-image: ${`url(${require("../../Images/equipments-bg.jpg")})`};
@@ -30,6 +31,16 @@ export const Label = styled.div`
   bottom: 0;
   padding: 12px 36px;
   z-index: 8;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+  font-size: 13px;
+
+  @media ${device.laptop} {
+    flex-wrap: nowrap;
+    width: inherit;
+    font-size: 16px;
+  }
 `;
 
 export const LabelItem = styled.div`
@@ -37,7 +48,11 @@ export const LabelItem = styled.div`
   align-items: center;
 
   &:not(:last-child) {
-    margin-right: 48px;
+    margin: 0 0 20px;
+
+    @media ${device.mobileL} {
+      margin: 0 48px 0;
+    }
   }
 `;
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const HomeContainer = styled.div`
   background-color: #f3f3f3;
@@ -24,4 +25,8 @@ export const Description = styled.p`
   margin: 0 auto;
   max-width: 960px;
   padding: 0 20px;
+
+  @media ${device.tablet} {
+    max-width: 700px;
+  }
 `;

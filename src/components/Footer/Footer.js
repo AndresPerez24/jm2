@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Container, InnerContainer, List, ListItem, Image, Label, LogoFooter, StyledLink } from "./FooterStyles";
+import { Container, InnerContainer, List, ListNav, ListItem, Image, Label, LogoFooter, StyledLink } from "./FooterStyles";
 
 class Footer extends Component {
   render() {
@@ -7,7 +7,7 @@ class Footer extends Component {
       <Fragment>
         <Container>
           <InnerContainer>
-            <List>
+            <ListNav>
               <ListItem>
                 <StyledLink to="/">Home</StyledLink>
               </ListItem>
@@ -23,7 +23,7 @@ class Footer extends Component {
               <ListItem>
                 <StyledLink to="/equipos">Equipos</StyledLink>
               </ListItem>
-            </List>
+            </ListNav>
             <List>
               <ListItem marginBottom="24px">
                 <Image src={require("../../Images/phone.svg")} alt="Telefono" />

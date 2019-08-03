@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
+
+export const Nav = styled.nav`
+  display: none;
+
+  @media ${device.laptop} {
+    display: inline-block;
+  }
+`;
 
 export const ListItem = styled.li`
   display: inline-block;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const ServiceContainer = styled.div`
   margin: 0 auto;
@@ -10,6 +11,7 @@ export const MainContainer = styled.div`
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const Container = styled.div`
@@ -18,7 +20,16 @@ export const Container = styled.div`
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.5);
   padding: 50px 30px;
   text-align: center;
-  width: 24%;
+  width: 100%;
+  margin-bottom: 15px;
+
+  @media ${device.mobileL} {
+    width: 49%;
+  }
+
+  @media ${device.laptop} {
+    width: 24%;
+  }
 `;
 
 export const Img = styled.div`

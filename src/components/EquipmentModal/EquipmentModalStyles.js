@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const Container = styled.div`
   align-items: center;
@@ -48,8 +49,16 @@ export const Modal = styled.div`
   border-radius: 10px;
   box-shadow: 0 2px 24px -3px rgba(0, 0, 0, 0.5);
   padding: 24px;
-  width: 650px;
+  width: 410px;
   position: relative;
+
+  @media ${device.mobileL} {
+  width: 500px;
+  }
+
+  @media ${device.laptop} {
+  width: 650px;
+  }
 `;
 
 export const Header = styled.div`

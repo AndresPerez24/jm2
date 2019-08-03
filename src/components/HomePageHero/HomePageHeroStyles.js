@@ -1,16 +1,25 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const MainContainer = styled.div`
   position: relative;
 
   .slick-dots {
     display: flex !important;
-    flex-direction: column;
-    bottom: 50%;
-    transform: translateY(50%);
     width: initial;
+    bottom: 70px;
+    right: 50%;
+    transform: translateX(50%);
+
+    @media ${device.tablet} {
+    flex-direction: column;
+    font-size: 50px;
+    text-align: left;
+    transform: translateY(50%);    
     right: 80px;
+    bottom: 50%;
+  }
 
     li {
       &:not(:last-child) {
@@ -48,23 +57,41 @@ export const Container = styled.div`
   margin: 0 auto;
   max-width: 1200px;
   padding: 160px 20px;
+  text-align: center;
+
+  @media ${device.tablet} {
+    font-size: 50px;
+    text-align: left;
+  }
 `;
 
 export const Title = styled.h1`
   color: #ffffff;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 20px;
   max-width: ${({ maxWidth }) => maxWidth};
+  margin: 0 auto 20px;
+
+  @media ${device.tablet} {
+    font-size: 50px;
+    margin: 0 0 20px;
+  }
 `;
 
 export const Description = styled.p`
   color: #ffffff;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 300;
   margin-bottom: 60px;
-  max-width: 600px;
+  max-width: 400px;
+  margin: 0 auto 60px;
+
+  @media ${device.tablet} {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 0 60px;
+  }
 `;
 
 export const Label = styled.span`
@@ -76,7 +103,7 @@ export const Button = styled(Link)`
   border: 4px solid #fd7f38;
   color: white;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 5px;
   max-width: 450px;
@@ -84,9 +111,14 @@ export const Button = styled(Link)`
   text-align: center;
   text-transform: uppercase;
   transition: 0.3s;
+  display: inline-block;
 
   &:hover {
     box-shadow: 0 0 22px 4px #fa6711;
+  }
+
+  @media ${device.tablet} {
+    font-size: 0.875rem;
   }
 `;
 
@@ -102,4 +134,9 @@ export const Arrow = styled.span`
   position: absolute;
   transform: translateX(-50%);
   width: 80px;
+  display: none;
+
+  @media ${device.tablet} {
+    display: flex;
+  }
 `;

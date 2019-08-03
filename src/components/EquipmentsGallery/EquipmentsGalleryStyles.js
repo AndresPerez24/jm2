@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const MainContainer = styled.div`
   background: #e3e1e1;
   display: flex;
   justify-content: center;
-  padding: 96px 72px 72px;
+  padding: 96px 20px 72px;
+
+  @media ${device.laptop} {
+    padding: 96px 72px 72px;
+  }
 `;
 
 export const Card = styled.div`
@@ -32,7 +37,15 @@ export const Item = styled.div`
   display: inline-block;
   padding: 12px;
   vertical-align: middle;
-  width: 25%;
+  width: 100%;
+
+  @media ${device.mobileL} {
+    width: 50%;
+  }
+
+  @media ${device.laptop} {
+    width: 25%;
+  }
 `;
 
 export const Container = styled.div`
