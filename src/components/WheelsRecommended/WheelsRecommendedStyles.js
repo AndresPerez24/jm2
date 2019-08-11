@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from '../../BreakPoints';
 
 export const MainContainer = styled.div`
-  padding: 96px 19px 0;
+  padding: 96px 24px 0;
 
   @media ${device.laptop} {
     padding: 96px 72px 0;
@@ -60,7 +60,7 @@ export const Card = styled.div`
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
-  height: ${({ isSelected }) => (isSelected ? "436px" : "160px")};
+  height: ${({ isSelected }) => (isSelected ? "436px" : "155px")};
   overflow: hidden;
   padding: 18px 20px;
   width: 100%;

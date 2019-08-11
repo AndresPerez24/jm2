@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import { device } from "../../BreakPoints";
 
 export const MainContainer = styled.div`
-  padding: 46px 72px 72px;
+  padding: 46px 24px 72px;
+
+  @media ${device.laptop} {
+    padding: 46px 72px 72px;
+  }
 `;
 
 export const InnerContainer = styled.div`

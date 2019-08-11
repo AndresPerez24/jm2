@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const Title = styled.h1`
-  font-size: 45px;
+  font-size: 28px;
   position: relative;
   padding-bottom: 30px;
   margin-bottom: 30px;
@@ -16,6 +17,10 @@ export const Title = styled.h1`
     transform: translate(50%);
     width: 80px;
   }
+
+  @media ${device.laptop} {
+    font-size: 45px;
+  }
 `;
 
 export const TextLight = styled.span`
@@ -27,7 +32,12 @@ export const TextBold = styled.span`
 `;
 
 export const Description = styled.p`
-  font-size: 19px;
-  text-align: center;
+  font-size: 16px;
   font-weight: 300;
+  padding: 0 12px;
+  text-align: center;
+
+  @media ${device.laptop} {
+    font-size: 19px;
+  }
 `;

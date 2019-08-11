@@ -1,15 +1,23 @@
 import styled from "styled-components";
+import { device } from "../../BreakPoints";
 
 export const MainContainer = styled.div`
-  padding: 40px 72px 0;
+  padding: 40px 24px 0;
+
+  @media ${device.laptop} {
+    padding: 40px 72px 0;
+  }
 `;
 
 export const Container = styled.div`
-  display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1400px;
   width: 100%;
+
+  @media ${device.laptop} {
+    display: flex;
+  }
 `;
 
 export const Title = styled.div`
@@ -21,9 +29,13 @@ export const Title = styled.div`
 
 export const SubTitle = styled.div`
   color: ${({ color }) => color};
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 24px;
+
+  @media ${device.laptop} {
+    font-size: 32px;
+  }
 `;
 
 export const Flex = styled.div`
@@ -34,10 +46,15 @@ export const Flex = styled.div`
 export const Description = styled.div`
   border-bottom: 1px solid #979797;
   color: #5f5f5f;
-  font-size: 19px;
+  font-size: 16px;
   height: 93px;
   margin-bottom: 24px;
   padding-bottom: 24px;
+
+  @media ${device.laptop} {
+    font-size: 19px;
+    height: 93px;
+  }
 `;
 
 export const Card = styled.div`
@@ -45,11 +62,16 @@ export const Card = styled.div`
   border-radius: 20px;
   box-shadow: 0 0 21px -6px rgba(0, 0, 0, 0.5);
   height: ${({ isSelected, height }) => (isSelected ? height : "374px")};
+  margin-bottom: 24px;
   overflow: hidden;
   padding: 36px 36px 46px;
   position: relative;
   transition: 0.5s;
-  width: 32%;
+
+  @media ${device.laptop} {
+    width: 32%;
+    margin: 0;
+  }
 `;
 
 export const TextAlignCenter = styled.div`
@@ -78,7 +100,12 @@ export const SpecsItem = styled.span`
 `;
 
 export const Image = styled.img`
-  height: 180px;
+  max-width: 100%;
+  height: 135px;
+
+  @media ${device.laptop} {
+    height: 180px;
+  }
 `;
 
 export const ImageItem = styled.img`

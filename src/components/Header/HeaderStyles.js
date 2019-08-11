@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { device } from '../../BreakPoints';
+import { device } from "../../BreakPoints";
 
 export const BoxShadow = styled.div`
   background-color: #fff;
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.50);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
   left: 0;
   position: fixed;
   right: 0;
@@ -28,4 +28,8 @@ export const MainContainer = styled.div`
 
 export const Logo = styled.img`
   width: 144px;
+
+  @media ${device.laptop} {
+    width: initial;
+  }
 `;

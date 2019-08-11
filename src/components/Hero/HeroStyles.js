@@ -48,7 +48,7 @@ export const LabelItem = styled.div`
   align-items: center;
 
   &:not(:last-child) {
-    margin: 0 0 20px;
+    margin: 0 0 12px;
 
     @media ${device.mobileL} {
       margin: 0 48px 0;
