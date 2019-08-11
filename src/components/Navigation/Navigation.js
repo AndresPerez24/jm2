@@ -1,11 +1,30 @@
 import React, { Component } from "react";
-import { ListItem, StyledLink, StyledButton, Nav } from "./NavigationStyles";
+import { withRouter } from "react-router-dom";
+import { ListItem, StyledLink, StyledButton, List } from "./NavigationStyles";
+import HamburgerButton from "../HamburgerButton/HamburgerButton";
 
 class Navigation extends Component {
+  state = {
+    navigationIsActive: false
+  };
+
+  toggleNavigation = () => {
+    this.setState(({ navigationIsActive }) => ({ navigationIsActive: !navigationIsActive }));
+  };
+
+  componentDidUpdate(prevProps) {
+    const { location } = this.props;
+    if (location.pathname !== prevProps.location.pathname || location.hash !== prevProps.location.hash) {
+      this.setState({ navigationIsActive: false });
+    }
+  }
+
   render() {
+    const { navigationIsActive } = this.state;
+
     return (
-      <Nav>
-        <ul>
+      <div>
+        <List isActive={navigationIsActive}>
           <ListItem>
             <StyledLink to="/">Home</StyledLink>
           </ListItem>
@@ -24,10 +43,11 @@ class Navigation extends Component {
           <ListItem>
             <StyledButton to="/equipos">Equipos</StyledButton>
           </ListItem>
-        </ul>
-      </Nav>
+        </List>
+        <HamburgerButton onClick={this.toggleNavigation} isActive={navigationIsActive} />
+      </div>
     );
   }
 }
 
-export default Navigation;
+export default withRouter(Navigation);

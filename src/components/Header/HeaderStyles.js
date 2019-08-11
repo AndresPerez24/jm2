@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from '../../BreakPoints';
 
 export const BoxShadow = styled.div`
   background-color: #fff;
@@ -13,10 +14,18 @@ export const BoxShadow = styled.div`
 export const MainContainer = styled.div`
   align-items: center;
   display: flex;
+  flex-direction: row-reverse;
   height: 120px;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0 24px;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  width: 144px;
+`;
