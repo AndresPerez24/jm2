@@ -28,7 +28,7 @@ class Hero extends Component {
                 Conozca nuestros <Label>equipos disponibles</Label> y descubra cómo podemos hacer crecer su negocio de acuerdo a sus
                 necesidades particulares.
               </Description>
-              <Button to="/equipos">Conózcalos aquí</Button>
+              <Button to="/#sobre-nosotros">Sobre nosotros</Button>
             </Container>
           </Slide>
           <Slide backgroundImage={hero2}>
@@ -37,7 +37,7 @@ class Hero extends Component {
               <Description>
                 Todos nuestros productos cuentan con la garantía y la confianza de <Label>las mejores marcas del mercado</Label>.
               </Description>
-              <Button to="/equipos">Equipos disponibles</Button>
+              <Button to="/ruedas">Equipos disponibles</Button>
             </Container>
           </Slide>
           <Slide backgroundImage={hero3}>
@@ -47,7 +47,7 @@ class Hero extends Component {
                 Reconocemos el valor de su tiempo, por eso nuestro servicio de atención y entrega personalizada le permite obtener sus
                 <Label>productos de manera rápida y segura</Label>.
               </Description>
-              <Button to="/equipos">Conozca nuestro equipos</Button>
+              <Button to="/#diferenciales">Lo que nos diferencia</Button>
             </Container>
           </Slide>
           <Slide backgroundImage={hero4} backgroundPosition="top">
