@@ -37,7 +37,7 @@ class Hero extends Component {
               <Description>
                 Todos nuestros productos cuentan con la garantía y la confianza de <Label>las mejores marcas del mercado</Label>.
               </Description>
-              <Button to="/ruedas">Equipos disponibles</Button>
+              <Button to="/ruedas">Nuestras ruedas</Button>
             </Container>
           </Slide>
           <Slide backgroundImage={hero3}>

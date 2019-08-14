@@ -12,8 +12,7 @@ class Contact extends Component {
         <ContactContainer>
           <Container>
             <Title>Contáctenos</Title>
-            {/* <Form action="https://formspree.io/mgrgajjx" method="POST"> */}
-            <Form>
+            <Form action="https://formspree.io/mlzqravm" method="POST">
               <Input type="text" name="name" placeholder="Nombre" required />
               <Input type="text" name="phone" placeholder="Celular" required />
               <Input type="email" name="email" placeholder="Email" required />
