@@ -5,11 +5,24 @@ import Contact from "../Contact/Contact";
 import Features from "../Features/Features";
 import HomePageHero from "../HomePageHero/HomePageHero";
 import Service from "../Services/Services";
-import { HomeContainer, Container, Title, Description } from "./HomeStyles";
+import {
+  Container,
+  Description,
+  HomeContainer,
+  Link,
+  LocationCard,
+  LocationsContainer,
+  LocationsTitle,
+  Title,
+  MapContainer,
+  LocationsSidebar
+} from "./HomeStyles";
+import MapChart from "../MapChart/MapChart";
 
 let aboutUs;
 let features;
 let contact;
+let locations;
 
 class Home extends Component {
   state = {};
@@ -26,6 +39,9 @@ class Home extends Component {
           break;
         case "#contacto":
           element = contact;
+          break;
+        case "#oficinas":
+          element = locations;
           break;
         default:
           break;
@@ -62,6 +78,30 @@ class Home extends Component {
         </div>
         <div ref={ref => (contact = ref)}>
           <Contact />
+        </div>
+        <div ref={ref => (locations = ref)}>
+          <LocationsContainer>
+            <LocationsSidebar>
+              <LocationsTitle>
+                Nuestras <strong>Oficinas</strong>
+              </LocationsTitle>
+              <LocationCard>
+                <strong>Bogota, Colombia</strong>
+                <div>Mauricio Rodriguez</div>
+                <div>+57 318 7353881</div>
+                <Link href="mailto:mrodriguez@sljm2.com">mrodriguez@sljm2.com</Link>
+              </LocationCard>
+              <LocationCard>
+                <strong>Guayaquil, Ecuador</strong>
+                <div>Ignacio Sarmiento Hernandez</div>
+                <div>+59 398 7769817</div>
+                <Link href="mailto:isarmiento@sljm2">isarmiento@sljm2</Link>
+              </LocationCard>
+            </LocationsSidebar>
+            <MapContainer>
+              <MapChart />
+            </MapContainer>
+          </LocationsContainer>
         </div>
       </HomeContainer>
     );

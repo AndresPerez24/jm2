@@ -87,7 +87,7 @@ export const Img = styled.img`
 `;
 
 export const ImagesContainer = styled.div`
-  box-shadow: 0 0 34px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 34px 1px rgba(0, 0, 0, 0.2);
   position: relative;
   background-color: #fff;
 `;

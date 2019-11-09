@@ -21,6 +21,9 @@ class Footer extends Component {
                 <StyledLink to="/#contacto">Contacto</StyledLink>
               </ListItem>
               <ListItem>
+                <StyledLink to="/#oficinas">Oficinas</StyledLink>
+              </ListItem>
+              <ListItem>
                 <StyledLink to="/equipos">Equipos</StyledLink>
               </ListItem>
             </ListNav>
